@@ -195,12 +195,9 @@ data="'{}'")); quit(save="no")'
 ```
 
 
-## 4. Create annotated single count matrix with antibody barcode counts
-per cell
+## 4. Create annotated single count matrix with antibody barcode counts per cell
 
-As for each cell 1 file was generated, the data needs to be merged. One
-can use the
-following commands in R to obtain such count table:
+As for each cell 1 file was generated, the data needs to be merged. One can use the following commands in R to obtain such count table:
 
 ```r
 
