@@ -95,19 +95,17 @@ expression
 5. Run information is logged to output/exp_log/Run_info.log
 
 
-NOTE: The ANCHOR defines the common sequence of all antibody barcodes.
+> NOTE: The ANCHOR defines the common sequence of all antibody barcodes.
 The regular
 expression defines the 10 bp barcode directly before the ANCHOR and the 15
 bp UMI
 sequence before the barcode sequence. In comparison with
 [ID-seq](https://github.com/jessievb/IDseq): the anchor is shorter and
 there is no Barcode 2 defined behind the ANCHOR.  
-
 ANCHOR <- "(ATCAGTCAACAG)"  
-
 REGULAR_EXPRESSION_PATTERN <- paste0( 
 "[ACTGN]+([ACTGN]{15,15})([ACTGN]{10,10})",
-ANCHOR, "[ACTGN]+")  
+ANCHOR, "[ACTGN]+")   
 
 
 
@@ -172,7 +170,8 @@ The antibody_barcode_index.txt file should contain the antibody specific
 nucleotide sequences a barcode number and the name of the Antibody.  
 
 
-Example:
+Example:  
+
 | Barcode_1  | Ab_barcode_nr | Ab_name        |
 |------------|---------------|----------------|
 | GTATCGTCGT | 1             | Name_Antibody1 |
